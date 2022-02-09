@@ -1,0 +1,17 @@
+{
+  "name": "hcc",
+  "version": "0.0.1",
+  "description": "ppReader packet",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JackHCC",
+  "license": "MIT",
+  "dependencies": {
+    "@vant/weapp": "^1.10.2"
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "^3.4.5"
+  }
+}

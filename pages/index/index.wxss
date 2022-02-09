@@ -1,0 +1,34 @@
+/**index.wxss**/
+.header {
+    width: 96%;
+    margin: 1%;
+    background-color: white;
+}
+
+.body {
+    margin-top: 18%;
+    margin-bottom: 18%;
+    align-items: center;
+}
+
+.footer {
+    width: 96%;
+    margin: 1%;
+    background-color: white;
+}
+
+.mini_title {
+    height: 8%;
+    /* width: 100%; */
+    background-color: white;
+    padding-left: 40rpx;
+    margin-bottom: 2rpx;
+    font-size: 30rpx;
+    line-height: 60rpx;
+}
+
+.share_item_text {
+    font-size: 38rpx;
+    margin-bottom: 6rpx;
+    margin-top: 15rpx;
+}

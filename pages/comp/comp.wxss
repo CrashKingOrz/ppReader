@@ -1,0 +1,12 @@
+/* pages/comp/comp.wxss */
+.test {
+    height: 200rpx;
+    width: 60%;
+    text-align: center;
+    line-height: 200rpx;
+    margin-top: 40%;
+    margin-bottom: 80%;
+    background-color: rgb(79, 135, 190);
+    color: snow;
+    padding: 10rpx;
+}

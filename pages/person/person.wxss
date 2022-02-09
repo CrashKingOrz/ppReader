@@ -1,0 +1,51 @@
+/* pages/person/person.wxss */
+.header {
+  width: 96%;
+  margin: 1%;
+  background-color: white;
+  display: flex;
+}
+
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  font-size: 32rpx;
+}
+
+.userinfo-photo {
+  position: relative;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  font-size: 24rpx;
+}
+
+
+.body {
+  width: 96%;
+  margin-top: 5%;
+}
+
+.cell_title_view {
+  margin-bottom: 2%;
+  margin-top: 3%;
+}
+
+.cell_title {
+  font-size: 28rpx;
+  margin-left: 30rpx;
+}
+
+.footer {
+  width: 96%;
+  margin: 1%;
+  background-color: white;
+}

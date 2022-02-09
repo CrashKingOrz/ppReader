@@ -1,0 +1,60 @@
+<!--pages/person/person.wxml-->
+<view class="container">
+  <view class="header">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <view>
+        <view class="userinfo-nickname">
+          <open-data type="userNickName"></open-data>
+        </view>
+        <view class="userinfo-photo">130****6088</view>
+      </view>
+      
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+    </block>
+  </view>
+  
+  <view class="body">
+
+    <van-grid>
+      <van-grid-item icon="shop-o" text="商城" />
+      <van-grid-item icon="cluster-o" text="组件管理" />
+      <van-grid-item icon="chart-trending-o" text="统计" />
+      <van-grid-item icon="brush-o" text="主题" />
+    </van-grid>
+    
+    <view class="cell_title_view"><text class="cell_title">设置</text></view>
+    <van-cell-group size="large">
+      <van-cell title="账号安全" is-link />
+      <van-cell title="基本设置" is-link />
+    </van-cell-group>
+
+    <view class="cell_title_view"><text class="cell_title">功能</text></view>
+    <van-cell-group>
+      <van-cell title="学习记录" is-link />
+      <van-cell title="收藏" is-link />
+      <van-cell title="笔记" is-link />
+    </van-cell-group>
+
+    <view class="cell_title_view"><text class="cell_title">扩展</text></view>
+    <van-cell-group>
+      <van-cell title="升级内核" is-link />
+      <van-cell title="版本更新" is-link value="已是最新版本" />
+      <van-cell title="关于我们" is-link />
+    </van-cell-group>
+  </view>
+
+  <view class="footer">
+    <van-divider contentPosition="center">服务条款与协议</van-divider>
+  </view>
+</view>

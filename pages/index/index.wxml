@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="header">
+    <van-search
+      value="{{ value }}"
+      input-align="center"
+      placeholder="请输入搜索关键词"
+    />
+    <van-grid>
+      <van-grid-item icon="coupon-o" text="学习记录" />
+      <van-grid-item icon="star-o" text="收藏" />
+      <van-grid-item icon="edit" text="笔记" />
+      <van-grid-item icon="setting-o" text="设置" />
+    </van-grid>
+  </view>
+
+  <view class="body">
+    <van-button round hairline
+    class="start_learning"
+    type="primary" 
+    icon="/images/index/ppreader-icon.png" 
+    color="#13227a"
+    bind:click="gotoCamera">开始学习|按钮样式待设计</van-button>
+  </view>
+
+  <view class="footer">
+    <van-divider/>
+
+    <view class="mini_title">动态</view>
+
+    <van-card
+      desc="点读机使用教程，配置方法等，你可以在这里配置适应你习惯的ppReader点读机！"
+      thumb="/images/logo/ppreader-icon.png">
+      <view slot="title">
+        <text class="share_item_text">ppReader使用指南</text>
+      </view>
+    </van-card>
+
+    <van-card
+      desc="点读机使用教程，配置方法等，你可以在这里配置适应你习惯的ppReader点读机！"
+      thumb="/images/logo/ppreader-icon.png">
+      <view slot="title">
+        <text class="share_item_text">ppReader使用指南</text>
+      </view>
+    </van-card>
+
+    <van-card
+      desc="点读机使用教程，配置方法等，你可以在这里配置适应你习惯的ppReader点读机！"
+      thumb="/images/logo/ppreader-icon.png">
+      <view slot="title">
+        <text class="share_item_text">ppReader使用指南</text>
+      </view>
+    </van-card>
+
+  </view>
+</view>

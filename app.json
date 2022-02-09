@@ -1,0 +1,54 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/camera/carema",
+        "pages/person/person",
+        "pages/comp/comp",
+        "pages/index_subpages/camera/camera"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "ppReader",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-image": "@vant/weapp/image/index",
+        "van-grid": "@vant/weapp/grid/index",
+        "van-grid-item": "@vant/weapp/grid-item/index",
+        "van-divider": "@vant/weapp/divider/index",
+        "van-search": "@vant/weapp/search/index",
+        "van-card": "@vant/weapp/card/index",
+        "van-cell": "@vant/weapp/cell/index",
+        "van-cell-group": "@vant/weapp/cell-group/index"
+    },
+    "tabBar": {
+        "color": "#8a8a8a",
+        "selectedColor": "#1296db",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/comp/comp",
+                "text": "组件库",
+                "iconPath": "/images/tabbar/comp.png",
+                "selectedIconPath": "/images/tabbar/comp_active.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "点读",
+                "iconPath": "/images/tabbar/ppreader.png",
+                "selectedIconPath": "/images/tabbar/ppreader_active.png"
+            },
+            {
+                "pagePath": "pages/person/person",
+                "text": "主页",
+                "iconPath": "/images/tabbar/person.png",
+                "selectedIconPath": "/images/tabbar/person_active.png"
+            }
+        ]
+    }
+}
