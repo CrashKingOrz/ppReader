@@ -7,10 +7,10 @@
       placeholder="请输入搜索关键词"
     />
     <van-grid>
-      <van-grid-item icon="coupon-o" text="学习记录" />
-      <van-grid-item icon="star-o" text="收藏" />
-      <van-grid-item icon="edit" text="笔记" />
-      <van-grid-item icon="setting-o" text="设置" />
+      <van-grid-item icon="coupon-o" text="学习记录" link-type="navigateTo" url="/pages/index_subpages/learning_record/learning_record" />
+      <van-grid-item icon="star-o" text="收藏" link-type="navigateTo" url="/pages/index_subpages/favorite/favorite" />
+      <van-grid-item icon="edit" text="笔记" link-type="navigateTo" url="/pages/index_subpages/writing/writing" />
+      <van-grid-item icon="setting-o" text="设置" link-type="navigateTo" url="/pages/index_subpages/setting/setting" />
     </van-grid>
   </view>
 

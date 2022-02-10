@@ -5,7 +5,18 @@
         "pages/camera/carema",
         "pages/person/person",
         "pages/comp/comp",
-        "pages/index_subpages/camera/camera"
+        "pages/index_subpages/camera/camera",
+        "pages/index_subpages/learning_record/learning_record",
+        "pages/index_subpages/favorite/favorite",
+        "pages/index_subpages/writing/writing",
+        "pages/index_subpages/setting/setting",
+        "pages/person_subpages/shop/shop",
+        "pages/person_subpages/statistic/statistic",
+        "pages/person_subpages/theme/theme",
+        "pages/person_subpages/manager/manager",
+        "pages/person_subpages/account/account",
+        "pages/person_subpages/aboutus/aboutus",
+        "pages/person_subpages/kernel/kernel"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -23,7 +34,8 @@
         "van-search": "@vant/weapp/search/index",
         "van-card": "@vant/weapp/card/index",
         "van-cell": "@vant/weapp/cell/index",
-        "van-cell-group": "@vant/weapp/cell-group/index"
+        "van-cell-group": "@vant/weapp/cell-group/index",
+        "van-switch": "@vant/weapp/switch/index"
     },
     "tabBar": {
         "color": "#8a8a8a",

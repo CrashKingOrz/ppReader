@@ -27,30 +27,30 @@
   <view class="body">
 
     <van-grid>
-      <van-grid-item icon="shop-o" text="商城" />
-      <van-grid-item icon="cluster-o" text="组件管理" />
-      <van-grid-item icon="chart-trending-o" text="统计" />
-      <van-grid-item icon="brush-o" text="主题" />
+      <van-grid-item icon="shop-o" text="商城" link-type="navigateTo" url="/pages/person_subpages/shop/shop" />
+      <van-grid-item icon="cluster-o" text="组件管理" link-type="navigateTo" url="/pages/person_subpages/manager/manager" />
+      <van-grid-item icon="chart-trending-o" text="统计" link-type="navigateTo" url="/pages/person_subpages/statistic/statistic" />
+      <van-grid-item icon="brush-o" text="主题" link-type="navigateTo" url="/pages/person_subpages/theme/theme" />
     </van-grid>
     
     <view class="cell_title_view"><text class="cell_title">设置</text></view>
     <van-cell-group size="large">
-      <van-cell title="账号安全" is-link />
-      <van-cell title="基本设置" is-link />
+      <van-cell title="账号安全" is-link link-type="navigateTo" url="/pages/person_subpages/account/account" />
+      <van-cell title="基本设置" is-link link-type="navigateTo" url="/pages/index_subpages/setting/setting" />
     </van-cell-group>
 
     <view class="cell_title_view"><text class="cell_title">功能</text></view>
     <van-cell-group>
-      <van-cell title="学习记录" is-link />
-      <van-cell title="收藏" is-link />
-      <van-cell title="笔记" is-link />
+      <van-cell title="学习记录" is-link link-type="navigateTo" url="/pages/index_subpages/learning_record/learning_record" />
+      <van-cell title="收藏" is-link link-type="navigateTo" url="/pages/index_subpages/favorite/favorite" />
+      <van-cell title="笔记" is-link link-type="navigateTo" url="/pages/index_subpages/writing/writing" />
     </van-cell-group>
 
     <view class="cell_title_view"><text class="cell_title">扩展</text></view>
     <van-cell-group>
-      <van-cell title="升级内核" is-link />
+      <van-cell title="升级内核" is-link link-type="navigateTo" url="/pages/person_subpages/kernel/kernel" />
       <van-cell title="版本更新" is-link value="已是最新版本" />
-      <van-cell title="关于我们" is-link />
+      <van-cell title="关于我们" is-link link-type="navigateTo" url="/pages/person_subpages/aboutus/aboutus" />
     </van-cell-group>
   </view>
 
