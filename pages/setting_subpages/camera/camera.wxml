@@ -1,0 +1,27 @@
+<!--pages/setting_subpages/camera/camera.wxml-->
+<view class="container">
+  <view class="panel">
+
+    <van-divider contentPosition="center">显示</van-divider>
+    
+    <van-cell-group>
+      <van-cell title="显示手骨架" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
+      <van-cell title="显示帧率" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
+      <van-cell title="显示模式" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
+      <van-cell title="显示手掌框" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
+      <van-cell title="显示食指坐标" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
+    </van-cell-group>
+
+    <van-divider/>
+
+    <van-divider contentPosition="center">功能</van-divider>
+
+    <van-cell-group>
+      <van-cell title="启用手指缩放" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
+      <van-cell title="启用OCR" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
+      <van-cell title="启用物体识别" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
+      <van-cell title="启用语音播报" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
+      <van-cell title="启用浏览器" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
+    </van-cell-group>
+  </view>
+</view>

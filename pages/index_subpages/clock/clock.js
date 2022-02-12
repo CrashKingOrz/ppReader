@@ -1,4 +1,4 @@
-// pages/camera/carema.js
+// pages/index_subpages/clock/clock.js
 Page({
 
     /**

@@ -8,9 +8,5 @@ Page({
     
   },
   
-  gotoCamera(){
-    wx.navigateTo({
-      url: '/pages/index_subpages/camera/camera',
-    })
-  },
+
 });

@@ -1,4 +1,4 @@
-/* pages/index_subpages/setting/setting.wxss */
+/* pages/setting_subpages/camera/camera.wxss */
 .panel {
     width: 96%;
     background-color: white;

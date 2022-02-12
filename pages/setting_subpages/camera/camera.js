@@ -1,11 +1,11 @@
-// pages/comp/comp.js
+// pages/setting_subpages/camera/camera.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+      checked: true,
     },
 
     /**
@@ -62,5 +62,17 @@ Page({
      */
     onShareAppMessage: function () {
 
-    }
+    },
+
+    onChange({ detail }) {
+        wx.showModal({
+          title: '提示',
+          content: '是否切换开关？',
+          success: (res) => {
+            if (res.confirm) {
+              this.setData({ checked2: detail });
+            }
+          },
+        });
+      }
 })

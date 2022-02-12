@@ -6,8 +6,8 @@
 }
 
 .body {
-    margin-top: 18%;
-    margin-bottom: 18%;
+    width: 96%;
+    margin: 1%;
     align-items: center;
 }
 
@@ -21,14 +21,14 @@
     height: 8%;
     /* width: 100%; */
     background-color: white;
-    padding-left: 40rpx;
+    padding-left: 3%;
     margin-bottom: 2rpx;
-    font-size: 30rpx;
+    font-size: 16px;
     line-height: 60rpx;
 }
 
 .share_item_text {
-    font-size: 38rpx;
-    margin-bottom: 6rpx;
-    margin-top: 15rpx;
+    font-size: 20rpx;
+    margin-bottom: 10rpx;
+    margin-top: 30px;
 }

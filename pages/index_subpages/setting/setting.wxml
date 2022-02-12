@@ -1,24 +1,54 @@
 <!--pages/index_subpages/setting/setting.wxml-->
 <view class="container">
   <view class="panel">
-    <view class="mini_title">显示</view>
+
+    <van-divider contentPosition="center">用户</van-divider>
     <van-cell-group>
-      <van-cell title="显示手骨架" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
-      <van-cell title="显示帧率" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
-      <van-cell title="显示模式" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
-      <van-cell title="显示手掌框" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
-      <van-cell title="显示食指坐标" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
+      <van-cell title="账户安全" is-link link-type="navigateTo" url="/pages/person_subpages/account/account" />
+      <van-cell title="用户设置" is-link link-type="navigateTo" url="/pages/person_subpages/account/account" />
+    </van-cell-group>
+
+    <van-divider contentPosition="center">功能</van-divider>
+    <van-cell-group>
+      <van-cell title="指尖点读" is-link link-type="navigateTo" url="/pages/setting_subpages/camera/camera" />
+      <van-cell title="智能朗读" is-link link-type="navigateTo" url="/pages/setting_subpages/reader/reader" />
+      <van-cell title="智能问答" is-link link-type="navigateTo" url="/pages/setting_subpages/chatbot/chatbot" />
+      <van-cell title="万能识别" is-link link-type="navigateTo" url="#" />
+      <van-cell title="字词典库" is-link link-type="navigateTo" url="#" />
+    </van-cell-group>
+
+    <van-divider contentPosition="center">健康保护</van-divider>
+    <van-cell-group>
+      <van-cell title="用眼题型" ><van-switch checked="{{ checked }}" bind:change="onChange" size="20px" /></van-cell>
+      <van-cell title="姿态纠正" ><van-switch checked="{{ checked }}" bind:change="onChange" size="20px" /></van-cell>
+    </van-cell-group>
+
+    <van-divider contentPosition="center">管理</van-divider>
+    <van-cell-group>
+      <van-cell title="升级内核" is-link link-type="navigateTo" url="/pages/person_subpages/kernel/kernel" />
+      <van-cell title="功能管理" is-link link-type="navigateTo" url="#" />
+      <van-cell title="权限管理" is-link link-type="navigateTo" url="#" />
+
+    </van-cell-group>
+
+
+    <van-divider contentPosition="center">其他</van-divider>
+    <van-cell-group>
+      <van-cell title="商务合作" is-link link-type="navigateTo" url="#" />
+      <van-cell title="隐私政策" is-link link-type="navigateTo" url="#" />
+      <van-cell title="用户协议" is-link link-type="navigateTo" url="#" />
+      <van-cell title="分享邀请" is-link link-type="navigateTo" url="#" />
+      <van-cell title="不良举报" is-link link-type="navigateTo" url="#" />
     </van-cell-group>
 
     <van-divider/>
 
-    <view class="mini_title">功能</view>
     <van-cell-group>
-      <van-cell title="启用手指缩放" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
-      <van-cell title="启用OCR" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
-      <van-cell title="启用物体识别" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
-      <van-cell title="启用语音播报" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
-      <van-cell title="启用浏览器" ><van-switch checked="{{ checked }}" bind:change="onChange" /></van-cell>
+      <van-cell title="版本更新" is-link value="已是最新版本" />
+      <van-cell title="关于我们" is-link link-type="navigateTo" url="#" />
+      
     </van-cell-group>
+
+
   </view>
 </view>

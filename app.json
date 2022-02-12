@@ -2,9 +2,7 @@
     "pages": [
         "pages/index/index",
         "pages/logs/logs",
-        "pages/camera/carema",
         "pages/person/person",
-        "pages/comp/comp",
         "pages/index_subpages/camera/camera",
         "pages/index_subpages/learning_record/learning_record",
         "pages/index_subpages/favorite/favorite",
@@ -16,7 +14,15 @@
         "pages/person_subpages/manager/manager",
         "pages/person_subpages/account/account",
         "pages/person_subpages/aboutus/aboutus",
-        "pages/person_subpages/kernel/kernel"
+        "pages/person_subpages/kernel/kernel",
+        "pages/index_subpages/reader/reader",
+        "pages/index_subpages/chatbot/chatbot",
+        "pages/index_subpages/detection/detection",
+        "pages/index_subpages/dictionary/dictionary",
+        "pages/index_subpages/clock/clock",
+        "pages/setting_subpages/camera/camera",
+        "pages/setting_subpages/chatbot/chatbot",
+        "pages/setting_subpages/reader/reader"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -44,20 +50,14 @@
         "backgroundColor": "#ffffff",
         "list": [
             {
-                "pagePath": "pages/comp/comp",
-                "text": "组件库",
-                "iconPath": "/images/tabbar/comp.png",
-                "selectedIconPath": "/images/tabbar/comp_active.png"
-            },
-            {
                 "pagePath": "pages/index/index",
-                "text": "点读",
+                "text": "学习室",
                 "iconPath": "/images/tabbar/ppreader.png",
                 "selectedIconPath": "/images/tabbar/ppreader_active.png"
             },
             {
                 "pagePath": "pages/person/person",
-                "text": "主页",
+                "text": "我的",
                 "iconPath": "/images/tabbar/person.png",
                 "selectedIconPath": "/images/tabbar/person_active.png"
             }

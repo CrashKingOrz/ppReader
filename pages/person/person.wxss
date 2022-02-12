@@ -35,13 +35,16 @@
 }
 
 .cell_title_view {
-  margin-bottom: 2%;
   margin-top: 3%;
+  background-color: white;
 }
 
 .cell_title {
-  font-size: 28rpx;
-  margin-left: 30rpx;
+    height: 6%;
+    padding-left: 2%;
+    margin-bottom: 2rpx;
+    font-size: 14px;
+    line-height: 30px;
 }
 
 .footer {

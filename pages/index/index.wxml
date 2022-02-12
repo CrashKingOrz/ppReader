@@ -6,21 +6,32 @@
       input-align="center"
       placeholder="请输入搜索关键词"
     />
-    <van-grid>
-      <van-grid-item icon="coupon-o" text="学习记录" link-type="navigateTo" url="/pages/index_subpages/learning_record/learning_record" />
-      <van-grid-item icon="star-o" text="收藏" link-type="navigateTo" url="/pages/index_subpages/favorite/favorite" />
-      <van-grid-item icon="edit" text="笔记" link-type="navigateTo" url="/pages/index_subpages/writing/writing" />
-      <van-grid-item icon="setting-o" text="设置" link-type="navigateTo" url="/pages/index_subpages/setting/setting" />
-    </van-grid>
+    
   </view>
 
   <view class="body">
-    <van-button round hairline
-    class="start_learning"
-    type="primary" 
-    icon="/images/index/ppreader-icon.png" 
-    color="#13227a"
-    bind:click="gotoCamera">开始学习|按钮样式待设计</van-button>
+
+    <van-divider contentPosition="center">学习机</van-divider>
+    <van-grid clickable square column-num="2" >
+      <van-grid-item icon="records" text="指尖点读" link-type="navigateTo" url="/pages/index_subpages/camera/camera" />
+      <van-grid clickable square column-num="2" >
+        <van-grid-item icon="bullhorn-o" text="智能朗读" link-type="navigateTo" url="/pages/index_subpages/reader/reader" />
+        <van-grid-item icon="bulb-o" text="智能问答" link-type="navigateTo" url="/pages/index_subpages/chatbot/chatbot" />
+        <van-grid-item icon="scan" text="万能识别" link-type="navigateTo" url="/pages/index_subpages/detection/detection" />
+        <van-grid-item icon="label-o" text="字词典库" link-type="navigateTo" url="/pages/index_subpages/dictionary/dictionary" />
+      </van-grid>
+    </van-grid>
+  
+    <van-divider contentPosition="center">功能仓库</van-divider>
+    <van-grid clickable square column-num="3" >
+      <van-grid-item icon="coupon-o" text="学习记录" link-type="navigateTo" url="/pages/index_subpages/learning_record/learning_record" />
+      <van-grid-item icon="star-o" text="收藏" link-type="navigateTo" url="/pages/index_subpages/favorite/favorite" />
+      <van-grid-item icon="edit" text="笔记" link-type="navigateTo" url="/pages/index_subpages/writing/writing" />
+      <van-grid-item icon="clock-o" text="学习闹钟" link-type="navigateTo" url="/pages/index_subpages/clock/clock" />
+      <van-grid-item icon="chart-trending-o" text="统计分析" link-type="navigateTo" url="/pages/person_subpages/statistic/statistic" />
+      <van-grid-item icon="smile-o" text="学习课程" link-type="navigateTo" url="/pages/person_subpages/shop/shop" />
+    </van-grid>
+    
   </view>
 
   <view class="footer">
