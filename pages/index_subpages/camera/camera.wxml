@@ -7,3 +7,8 @@
   </camera>
   <image class="camera_img" src="{{src}}" wx:if="{{show}}"></image>
 </view>
+
+<!-- canvas组件，用于图片压缩，位置在屏幕外，不可见 -->
+<canvas type="2d"
+        id="capture"
+        style="width: 1px; height: 1px;"></canvas>>
