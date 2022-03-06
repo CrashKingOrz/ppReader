@@ -9,6 +9,7 @@
   "author": "JackHCC",
   "license": "MIT",
   "dependencies": {
+    "@mediapipe/hands": "^0.4.1646424915",
     "@vant/weapp": "^1.10.2"
   },
   "devDependencies": {
