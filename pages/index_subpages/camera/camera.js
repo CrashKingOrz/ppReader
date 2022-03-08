@@ -5,8 +5,9 @@ Page({
      * 页面的初始数据
      */
     data: {
-        src: '',//拍照后图像路径(临时路径)
-        show: false//相机视图显示隐藏标识
+        src: '', //拍照后图像路径(临时路径)
+        show: false, //相机视图显示隐藏标识
+        popup_show: false //识别弹框显示
     },
 
     /**
@@ -33,6 +34,15 @@ Page({
         })
         listener.start()
     },*/
+
+
+    showPopup() {
+      this.setData({ popup_show: true });
+    },
+  
+    onClose() {
+      this.setData({ popup_show: false });
+    },
 
     /**
      * 生命周期函数--监听页面加载

@@ -1,21 +1,32 @@
 <!--pages/index_subpages/camera/camera.wxml-->
-<!-- <head>
-  <meta charset="utf-8">
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
-</head> -->
-<text>调摄像头</text>
-<view class="camera_box">
-  <camera class="camera" wx:if="{{!show}}" device-position="front" flash="off" binderror="error">
-    <!-- <cover-view class="id_m"> -->
-    <!-- </cover-view> -->
-  </camera>
-  <image class="camera_img" src="{{src}}" wx:if="{{show}}"></image>
-</view>
+<view class="container">
+  <view class="head">
+    <text>智能点读</text>
+  </view>
 
-<!-- canvas组件，用于图片压缩，位置在屏幕外，不可见 -->
-<canvas type="2d"
-        id="capture"
-        style="width: 1px; height: 1px;"></canvas>>
+  <view class="body">
+    <view class="camera_box">
+      <camera class="camera" wx:if="{{!show}}" device-position="front" flash="off" binderror="error">
+      </camera>
+    </view>
+
+    <!-- canvas组件，用于图片压缩，位置在屏幕外，不可见 -->
+    <canvas type="2d" id="capture" style="width: 1px; height: 1px;"></canvas>
+    
+  </view> 
+
+  <view class="content">
+    <view class="res_card">
+      <image class="speaker" src="/images/index/ppreader/sound.png" />
+
+      <view class="title">文字结果/图像标签</view>
+      
+      <text class="mean_title">释义</text>
+      <view class="mean">释义内容</view>
+    </view>
+  </view>
+
+  <van-divider />
+
+  
+</view>        
