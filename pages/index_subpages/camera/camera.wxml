@@ -2,14 +2,18 @@
 <view class="container">
   <view class="head">
     <text>智能点读</text>
+    <van-switch checked="{{ checked }}" bind:change="modeChange" />
   </view>
 
   <view class="body">
     <view class="camera_box">
+      
       <camera class="camera" wx:if="{{!show}}" device-position="front" flash="off" binderror="error">
+        <canvas class="canvas" canvas-id="myCanvas" style="width: 480px; height: 640px;"></canvas>
       </camera>
+      
     </view>
-
+    
     <!-- canvas组件，用于图片压缩，位置在屏幕外，不可见 -->
     <canvas type="2d" id="capture" style="width: 1px; height: 1px;"></canvas>
     
@@ -19,12 +23,15 @@
     <view class="res_card">
       <image class="speaker" src="/images/index/ppreader/sound.png" />
 
-      <view class="title">文字结果/图像标签</view>
+      <!-- <view class="title">文字结果/图像标签</view> -->
+      <view class="title">{{title}}</view>
       
       <text class="mean_title">释义</text>
-      <view class="mean">释义内容</view>
+      <!-- <view class="mean">释义内容</view> -->
+      <view class="mean">{{mean}}</view>
     </view>
   </view>
+
 
   <van-divider />
 

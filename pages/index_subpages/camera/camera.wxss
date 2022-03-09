@@ -8,8 +8,7 @@
   /* height: 100vh;  */
   /* width: 94%; */
   margin: 2rpx; 
-  /* position: absolute; */
-
+  position: relative;
 }
 
 .body {
@@ -58,14 +57,21 @@
 }
 
 
-.camera {
-  height: 70vh; 
-  width: 92vw;
-  /* z-index: 1; */
+.camera{
+  /* height: 70vh; 
+  width: 92vw; */
+  height: 640rpx; 
+  width: 480rpx;
+  z-index: 1;
   position: relative;
 }
+
 
 .camera_view {
   width: 90%;
   margin: 20rpx;
+}
+
+.canvas {
+  color: red;
 }

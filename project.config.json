@@ -52,7 +52,7 @@
         "ignoreUploadUnusedFiles": true
     },
     "compileType": "miniprogram",
-    "libVersion": "2.19.4",
+    "libVersion": "2.22.1",
     "appid": "wx13423a33bba86090",
     "projectname": "ppReader",
     "debugOptions": {
