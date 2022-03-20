@@ -63,5 +63,11 @@
                 "selectedIconPath": "/images/tabbar/person_active.png"
             }
         ]
+    },
+    "plugins":{
+        "WechatSI": {
+            "version": "0.3.0",
+            "provider": "wx069ba97219f66d99"
+        }
     }
 }

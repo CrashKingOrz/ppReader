@@ -1,48 +1,131 @@
 /* pages/index_subpages/camera/camera.wxss */
 .head {
-  margin-top: 10rpx;
-  margin-bottom: 10rpx;
+  margin-top: 3rpx;
+  margin-bottom: 3rpx;
+  font-size: 20rpx;
+  width: 96%;
+}
+
+.body {
+  background-color: white;
+  width: 92%;
+  padding-left: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 2%;
 }
 
 .camera_box {
   /* height: 100vh;  */
   /* width: 94%; */
   margin: 2rpx; 
-  position: relative;
+  /* position: relative; */
 }
 
-.body {
-  background-color: white;
+.camera{
+  /* height: 640rpx; 
+  width: 480rpx; */
+  height: 640rpx; 
+  width: 480rpx;
+  margin-right: 3%;
+  z-index: 1;
+  /* position: relative; */
+  float: left;
+}
+
+.canvas {
+  color: red;
+}
+
+.ds_cell {
+  height: 60rpx;
+  margin-top: 0rpx;
+  margin-bottom: 30rpx;
+}
+
+.mode_view {
+  padding-left: 100rpx;
+}
+
+.mode_text {
+  font-size: 15rpx;
+  color: rgb(14, 126, 179);
+}
+
+.display {
+  font-size: 24rpx;
+  margin-bottom: 8rpx;
+  line-height: 30rpx;
+  margin-right: 20rpx;
+  color: rgb(14, 126, 179);
+  float: left;
+}
+
+.switch {
+  line-height: 44rpx;
+  margin-top: 6rpx;
+
 }
 
 .content {
-  width: 92%;
+  width: 96%;
   height: 60%;
   margin-top: 20rpx;
   background-color: white;
-  padding-left: 30rpx;
+  padding-left: 10rpx;
   padding-top: 10rpx;
   padding-bottom: 10rpx;
 }
 
 .res_card {
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 4rpx;
+  margin-bottom: 1%;
   width: 100%;
-  padding: 10rpx;
+  float: inline-start;
 }
 
 .title {
   font-size: 25rpx;
   margin-left: 16rpx;
+  margin-right: 16rpx;
   margin-bottom: 8rpx;
   line-height: 46rpx;
-  
+  float: left;
+}
+
+.pinyin {
+  font-size: 25rpx;
+  margin-left: 16rpx;
+  margin-bottom: 8rpx;
+  line-height: 46rpx;
+  color: rgb(14, 126, 179);
+  float: left;
 }
 
 .speaker {
   width: 30rpx;
   height: 30rpx;
   margin: 8rpx;
-  float: left;
+  /* float: left; */
+}
+
+.speaker_en{
+  width: 30rpx;
+  height: 30rpx;
+  margin: 8rpx;
+  /* float: left; */
+}
+
+.word {
+  font-size: 22rpx;
+  margin-left: 16rpx;
+  margin-right: 16rpx;
+  margin-bottom: 4rpx;
+  line-height: 36rpx;
+  color: green;
+  float: inline-start;
 }
 
 .mean_title {
@@ -50,28 +133,34 @@
   font-size: 24rpx;
 }
 
-.mean {
+.base_mean {
+  text-align: justify;
+  font-size: 22rpx;
+  margin-left: 16rpx;
+  margin-top: 10rpx;
+  margin-right: 26rpx;
+  margin-bottom: 8rpx;
+  line-height: 36rpx;
+  color: rgb(206, 83, 145);
+}
+
+.detail_mean {
+  text-align: justify;
+  font-size: 22rpx;
+  margin-left: 16rpx;
+  margin-bottom: 8rpx;
+  margin-top: 10rpx;
+  margin-right: 26rpx;
+  line-height: 36rpx;
+  color: rgb(206, 83, 145);
+}
+
+.sentence {
   margin: 10rpx;
-  font-size: 20rpx;
-
+  font-size: 22rpx;
+  margin-left: 16rpx;
+  margin-bottom: 8rpx;
+  line-height: 36rpx;
+  color: rgb(230, 103, 80);
 }
 
-
-.camera{
-  /* height: 70vh; 
-  width: 92vw; */
-  height: 640rpx; 
-  width: 480rpx;
-  z-index: 1;
-  position: relative;
-}
-
-
-.camera_view {
-  width: 90%;
-  margin: 20rpx;
-}
-
-.canvas {
-  color: red;
-}

@@ -1,39 +1,97 @@
 <!--pages/index_subpages/camera/camera.wxml-->
 <view class="container">
   <view class="head">
-    <text>智能点读</text>
-    <van-switch checked="{{ checked }}" bind:change="modeChange" />
+    <van-grid clickable square column-num="8" >
+      <van-grid-item icon="bulb-o" text="文字" icon-color="{{cn_color}}" bind:click="setCnShow"/>
+      <van-grid-item icon="exchange" text="关联" icon-color="{{word_color}}" bind:click="setWordShow"/>
+      <van-grid-item icon="notes-o" text="释义" icon-color="{{mean_color}}" bind:click="setMeanShow"/>
+      <van-grid-item icon="certificate" text="中文例句" icon-color="{{cn_se_color}}" bind:click="setCnSeShow"/>
+      <van-grid-item icon="points" text="典故" icon-color="{{story_color}}" bind:click="setStoryShow"/>
+      <van-grid-item icon="aim" text="英文" icon-color="{{en_color}}" bind:click="setEnShow"/>
+      
+      <van-grid-item icon="bullhorn-o" text="英文例句" icon-color="{{en_se_color}}" bind:click="setEnSeShow"/>
+      <van-grid-item icon="search" text="查询" icon-color="{{search_color}}" bind:click="setSearchShow"/>
+      
+    </van-grid>
   </view>
+  
 
   <view class="body">
     <view class="camera_box">
-      
       <camera class="camera" wx:if="{{!show}}" device-position="front" flash="off" binderror="error">
         <canvas class="canvas" canvas-id="myCanvas" style="width: 480px; height: 640px;"></canvas>
-      </camera>
-      
+      </camera> 
+
+      <!-- <view class="mode_view">
+        <view class="mode_text">点读 框读</view>     
+      </view> -->
+      <view class="ds_cell">
+        <view class="display">模式选择</view>
+        <van-switch class="switch" checked="{{ checked }}" bind:change="modeChange" />  
+      </view>
+      <view class="ds_cell">
+        <view class="display">当前模式：{{mode_text}}</view>     
+      </view>
+      <view class="ds_cell">
+        <view class="display">帧率：{{fps}}FPS</view>     
+      </view>
+      <view class="ds_cell">
+        <view class="display">手掌数：{{paw}}</view>     
+      </view>
     </view>
-    
     <!-- canvas组件，用于图片压缩，位置在屏幕外，不可见 -->
-    <canvas type="2d" id="capture" style="width: 1px; height: 1px;"></canvas>
-    
+    <canvas type="2d" id="capture" style="width: 1px; height: 1px;"></canvas> 
   </view> 
 
   <view class="content">
     <view class="res_card">
-      <image class="speaker" src="/images/index/ppreader/sound.png" />
-
-      <!-- <view class="title">文字结果/图像标签</view> -->
-      <view class="title">{{title}}</view>
       
-      <text class="mean_title">释义</text>
-      <!-- <view class="mean">释义内容</view> -->
-      <view class="mean">{{mean}}</view>
+      <!-- OCR识别的文本或Dectect识别的Lable -->
+      <view wx:if="{{!cn_show}}">
+        <view class="title">识别：{{title}}</view>
+        <view class="pinyin">拼音：{{pinyin}}</view>
+        <image class="speaker" src="/images/index/ppreader/sound.png" bindtap="yuyinPlay"/>
+      </view>
+      
     </view>
+    
+    
+    <view class="res_card" wx:if="{{!word_show}}">
+      <view>
+        <view class="word">反义词：{{rev_word}}</view>
+        <view class="word">近义词：{{sim_word}}</view>
+      </view>
+    </view>
+    <view class="res_card">
+      <!-- <text class="mean_title">释义</text> -->
+      <!-- 识别的字词或图像Lable的释义 -->
+      <view wx:if="{{!mean_show}}">
+        <view class="base_mean">简单释义：{{base_mean}}</view>
+        <view class="detail_mean">详细释义：{{detail_mean}}</view>
+      </view>  
+    </view>
+    <view class="res_card">
+      <view class="sentence" wx:if="{{!cn_se_show}}">例句：{{sentence}}</view>
+      
+      <view class="sentence" wx:if="{{!story_show}}">典故：{{story}}</view>
+    </view>
+    <view class="res_card">
+      <!-- OCR识别的英文的而翻译或Dectect识别的Lable的英文 -->
+      <view wx:if="{{!en_show}}">
+        <view class="title">翻译：{{trans}}</view>
+        <view class="pinyin">音标：{{yinbiao}}</view>
+        <image class="speaker_en" src="/images/index/ppreader/sound.png" />
+      </view>
+    </view>
+    <view class="res_card" wx:if="{{!en_se_show}}">
+      <view class="sentence">英文例句：{{en_sentence}}</view>
+    </view>
+
+    <view  wx:if="{{!search_show}}">
+      <button bindtap="baidu_search">Search</button>
+      <button bindtap="text_search">Translate</button>
+    </view>
+    
   </view>
-
-
   <van-divider />
-
-  
 </view>        
